@@ -1,3 +1,10 @@
-import {submitEvent} from "./events.js"
+import { events } from "./events.js"
+import { render } from "./dom.js";
 
-submitEvent();
+// Display all POIs on page on page load
+render();
+
+// POST new event to DB
+events.submitEvent();
+
+events.editEvent();
