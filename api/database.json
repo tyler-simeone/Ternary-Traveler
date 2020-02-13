@@ -16,5 +16,13 @@
       "visa_required": false
     }
   ],
-  "interests": []
+  "interests": [
+    {
+      "name": "this",
+      "description": "is",
+      "cost": "a",
+      "review": "test",
+      "id": 1
+    }
+  ]
 }

@@ -8,7 +8,7 @@ const API = {
     },
     // This will post the entry to DB in JSON obj format via factory.js
     saveEntry(entry) {
-        return fetch("http://localhost:8088/places", {
+        return fetch("http://localhost:8088/interests", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

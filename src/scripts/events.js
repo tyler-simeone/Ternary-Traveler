@@ -20,4 +20,8 @@ const submitEvent = () => {
     })
 }
 
+
+// TODO: Look at ch. 14 on relational data and add an id for "places" 
+// to be created alongside primary id in the interests DB.
+
 export {submitEvent}
