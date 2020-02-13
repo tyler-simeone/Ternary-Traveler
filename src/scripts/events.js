@@ -8,3 +8,14 @@ Will be invoking the dom.js render function, the api.js fetch methods,
 and the factory.js html & json factory functions.
 */ 
 
+const submitEvent = () => {
+    const submitBtn = document.getElementById("submitBtn")
+
+    submitBtn.addEventListener("click", () => {
+        event.preventDefault()
+        // API.saveEntry(json())
+        console.log(json())
+    })
+}
+
+export {submitEvent}
