@@ -2,6 +2,7 @@
 posted to JSON DB, and 2) an HTML card that will put JSON obj into 
 HTML format to be displayed on the DOM */
 
+// Creating object from user input to be added to JSON DB (POST, PUT)
 const json = () => {
     const destName = document.getElementById("name")
     const destDescription = document.getElementById("description")
@@ -18,14 +19,14 @@ const json = () => {
     `
 }
 
-const html = () => {
+// This is used to display JSON obj in the DOM (GET). Will need an obj as argument.
+const html = (jsonData) => {
     return `
         <section>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <p>${jsonData.name}</p>
+            <p>${jsonData.description}</p>
+            <p>${jsonData.cost}</p>
+            <p>${jsonData.review}</p>
         </section>
-
     `
 }
