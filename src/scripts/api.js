@@ -16,6 +16,7 @@ const API = {
             body: JSON.stringify(entryId)
         })
     },
+    // This will find the DB entry via passed-in obj's ID, and then it will replace it with updated values via events.js, factory.js, dom.js
     editEntry(entry) {
         return fetch(`http://localhost:8088/places/${entry.id}`, {
             method: "PUT",
