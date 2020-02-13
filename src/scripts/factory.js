@@ -20,7 +20,7 @@ const json = () => {
 }
 
 // This is used to display JSON obj in the DOM (GET). Will need an obj as argument.
-const html = (jsonData) => {
+const htmlCard = (jsonData) => {
     return `
         <section>
             <p>${jsonData.name}</p>
@@ -30,3 +30,5 @@ const html = (jsonData) => {
         </section>
     `
 }
+
+export {json, htmlCard}
