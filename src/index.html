@@ -8,10 +8,8 @@
 </head>
 <body>
     <div class="body--container">
-        <section class="body--header">
-            <h1>The Ternary Traveler</h1>
-            <h2>Travel Iteninerary</h2>
-        </section>
+        <h1>The Ternary Traveler</h1>
+        <h2>Travel Iteninerary</h2>
         <form action="">
             <!-- Three fieldsets for now to add three destinations -->
             <fieldset>
@@ -30,6 +28,14 @@
                 <label for="review">Review:</label>
                 <textarea name="review" id="review"></textarea>
             </fieldset>
+            <fieldset>
+                <select name="places" id="places">
+                    <option value="italy">Italy</option>
+                    <option value="switzerland">Switzerland</option>
+                    <option value="france">France</option>
+                </select>
+            </fieldset>
+            <button id="submitBtn">Submit</button>
         </form>
 
         <article id="results-container"></article>

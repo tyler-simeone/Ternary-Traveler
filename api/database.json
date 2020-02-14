@@ -1,20 +1,44 @@
 {
-    "places": [
-      { 
-        "id": 1, 
-        "name": "Italy", 
-        "visa_required": false 
-      },
-      { 
-        "id": 2, 
-        "name": "Switzerland", 
-        "visa_required": true 
-      },
-      { 
-        "id": 3, 
-        "name": "France", 
-        "visa_required": false
-      }
-    ],
-    "interests": []
-  }
+  "places": [
+    {
+      "id": 1,
+      "name": "Italy",
+      "visa_required": false
+    },
+    {
+      "id": 2,
+      "name": "Switzerland",
+      "visa_required": true
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "visa_required": false
+    }
+  ],
+  "interests": [
+    {
+      "name": "Arizona",
+      "description": "Mountain bike trip",
+      "cost": "$1500",
+      "review": "",
+      "id": 1
+    },
+    {
+      "name": "Val Di Fassa",
+      "description": "Mountain Biking in the Italian Alps",
+      "cost": "$4000",
+      "review": "",
+      "place": "italy",
+      "id": 2
+    },
+    {
+      "name": "Something",
+      "description": "some more things",
+      "cost": "$5000",
+      "review": "",
+      "place": "switzerland",
+      "id": 3
+    }
+  ]
+}

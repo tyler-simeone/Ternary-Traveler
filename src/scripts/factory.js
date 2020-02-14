@@ -4,17 +4,19 @@ HTML format to be displayed on the DOM */
 
 // Creating object from user input to be added to JSON DB (POST, PUT)
 const json = () => {
-    const destName = document.getElementById("name")
-    const destDescription = document.getElementById("description")
-    const destCost = document.getElementById("cost")
-    const destReview = document.getElementById("review")
+    const destName = document.getElementById("name").value
+    const destDescription = document.getElementById("description").value
+    const destCost = document.getElementById("cost").value
+    const destReview = document.getElementById("review").value
+    const place = document.querySelector("#places").value
 
     return `
         {
-            "name": ${destName},
-            "description": ${destDescription},
-            "cost": ${destCost},
-            "review": ${destReview}
+            "name": "${destName}",
+            "description": "${destDescription}",
+            "cost": "${destCost}",
+            "review": "${destReview}",
+            "place": "${place}"
         }
     `
 }
@@ -23,11 +25,18 @@ const json = () => {
 const htmlCard = (jsonData) => {
     return `
         <section>
-            <p>${jsonData.name}</p>
+            <h3>${jsonData.name}</h3>
             <p>${jsonData.description}</p>
             <p>${jsonData.cost}</p>
             <p>${jsonData.review}</p>
+            <p>${jsonData.place}</p>
         </section>
+        <button id="editBtn--${jsonData.id}">
+            Edit
+        </button>
+        <button id="deleteBtn--${jsonData.id}">
+            Delete
+        </button>
     `
 }
 
